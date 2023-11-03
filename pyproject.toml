@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "django-test-project"
+version = "0.1.0"
+description = "This project was created to learn the django features"
+authors = ["Mikhail Zherebtsov <bezrezen97@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+Django = "4.2.7"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
