@@ -4,11 +4,12 @@ from django.shortcuts import redirect
 from django.urls import reverse
 
 
-def index(request, tags=None, article_id=None):
-    article_id = 42
-    tags = 'python'
+def index(request):
 
-    return redirect(reverse('article', kwargs={'article_id': article_id, 'tags': tags}))
+    return render(
+        request,
+        'base.html',
+    )
 
 
 def about(request):
